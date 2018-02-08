@@ -2,13 +2,13 @@ const inlinelinkReg = /(\[[^\[\]]*\])\(([^()]*)\)*/g
 const seperateLinkReg = /(\[[^\[\]]*\])\[(\d+)\]/g
 const seperateLinkReferenceReg = /\[([^\[\]]*)\]:\s+(.*)/g
 
-function inlineToSeperate(str) {
+function inlineToSeperate(str, { offset = 1 } = {}) {
   let links = []
   str = str.replace(inlinelinkReg, (match, text, link) => {
     links.push(link)
-    return `${text}[${links.length + 1}]`
+    return `${text}[${links.length + offset}]`
   })
-  return str + '\n\n' + links.map((link, index) => `[${index}]: ${link}`).join('\n')
+  return str + '\n\n' + links.map((link, index) => `[${index + offset + 1}]: ${link}`).join('\n')
 }
 
 function separateToInline(str) {
