@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Html CSS Transformer</title>
+</head>
+<body>
+<div id="app"></div>
+<script src="https://unpkg.com/dmo"></script>
+<script src="dist/markdownLinksTransformer.js"></script>
+<script>
+  window.dmo({
+    title: 'Markdown links transformer',
+    username: 'ulivz',
+    name: 'markdown-links-transformer',
+    input: '',
+    transformers: {
+      'Inline to Seperate': function (raw) {
+        return markdownLinksTransformer.inlineToSeperate(raw)
+      },
+      'Seperate to Inline': function (raw) {
+        return markdownLinksTransformer.separateToInline(raw)
+      }
+    },
+    detectLanguage: true
+  })
+</script>
+</body>
+</html>
