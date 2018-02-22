@@ -6,7 +6,8 @@
     "url": "ULIVZ/markdown-links-transformer",
     "type": "git"
   },
-  "main": "dist/index.common.js",
+  "main": "dist/markdownLinksTransformer.js",
+  "module": "dist/markdownLinksTransformer.es.js",
   "files": [
     "dist"
   ],
