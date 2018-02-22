@@ -1,4 +1,3 @@
-
 # markdown-links-transformer
 
 [![NPM version](https://img.shields.io/npm/v/markdown-links-transformer.svg?style=flat)](https://npmjs.com/package/markdown-links-transformer) [![NPM downloads](https://img.shields.io/npm/dm/markdown-links-transformer.svg?style=flat)](https://npmjs.com/package/markdown-links-transformer) [![CircleCI](https://circleci.com/gh/ULIVZ/markdown-links-transformer/tree/master.svg?style=shield)](https://circleci.com/gh/ULIVZ/markdown-links-transformer/tree/master)  [![codecov](https://codecov.io/gh/ULIVZ/markdown-links-transformer/branch/master/graph/badge.svg)](https://codecov.io/gh/ULIVZ/markdown-links-transformer)
@@ -14,10 +13,47 @@ npm i markdown-links-transformer
 
 ```js
 const markdownLinksTransformer = require('markdown-links-transformer')
-
-markdownLinksTransformer()
-//=> foo
 ```
+
+
+## API
+
+- `markdownLinksTransformer.inlineToSeperate(input)`
+
+  - input:
+  
+  ```markdown
+  - **koa** | [Github](https://github.com/koajs/koa)  · [Documentation](http://koajs.com/)  · [文档](http://www.koacn.com/)
+  ```
+  
+  - output:
+  
+  ```
+  - **koa** | [Github][1]  · [Documentation][2]  · [文档][3]
+    
+  [1]: https://github.com/koajs/koa
+  [2]: http://koajs.com/
+  [3]: http://www.koacn.com/
+  ```
+
+- `markdownLinksTransformer.inlineToSeperate(input)`
+
+  - input: 
+  
+  ```markdown
+  - **koa** | [Github][1]  · [Documentation][2]  · [文档][3]
+  
+  [1]: https://github.com/koajs/koa
+  [2]: http://koajs.com/
+  [3]: http://www.koacn.com/
+  ```
+  
+  - output:
+  
+  ```
+  - **koa** | [Github](https://github.com/koajs/koa)  · [Documentation](http://koajs.com/)  · [文档](http://www.koacn.com/)
+  ```
+
 
 ## Contributing
 
