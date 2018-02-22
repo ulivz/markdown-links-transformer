@@ -28,7 +28,7 @@ const markdownLinksTransformer = require('markdown-links-transformer')
   
   - output:
   
-  ```
+  ```markdown
   - **koa** | [Github][1]  · [Documentation][2]  · [文档][3]
     
   [1]: https://github.com/koajs/koa
@@ -50,7 +50,7 @@ const markdownLinksTransformer = require('markdown-links-transformer')
   
   - output:
   
-  ```
+  ```markdown
   - **koa** | [Github](https://github.com/koajs/koa)  · [Documentation](http://koajs.com/)  · [文档](http://www.koacn.com/)
   ```
 
