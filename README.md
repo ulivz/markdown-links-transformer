@@ -1,7 +1,6 @@
 # markdown-links-transformer
 
-[![NPM version](https://img.shields.io/npm/v/markdown-links-transformer.svg?style=flat)](https://npmjs.com/package/markdown-links-transformer) [![NPM downloads](https://img.shields.io/npm/dm/markdown-links-transformer.svg?style=flat)](https://npmjs.com/package/markdown-links-transformer) [![CircleCI](https://circleci.com/gh/ULIVZ/markdown-links-transformer/tree/master.svg?style=shield)](https://circleci.com/gh/ULIVZ/markdown-links-transformer/tree/master)  [![codecov](https://codecov.io/gh/ULIVZ/markdown-links-transformer/branch/master/graph/badge.svg)](https://codecov.io/gh/ULIVZ/markdown-links-transformer)
- [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/ULIVZ/donate)
+[![NPM version](https://img.shields.io/npm/v/markdown-links-transformer.svg?style=flat)](https://npmjs.com/package/markdown-links-transformer) [![NPM downloads](https://img.shields.io/npm/dm/markdown-links-transformer.svg?style=flat)](https://npmjs.com/package/markdown-links-transformer) [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/ULIVZ/donate)
 
 ## Install
 
