@@ -15,8 +15,9 @@
     "test:cov": "jest --coverage && npm run lint",
     "test": "npm run lint && jest",
     "lint": "xo",
-    "prepublish": "npm run build",
-    "build": "bili --format cjs,es,umd,umd-min --exports default --name markdownLinksTransformer"
+    "prepublish": "yarn run snyk-protect && npm run build",
+    "build": "bili --format cjs,es,umd,umd-min --exports default --name markdownLinksTransformer",
+    "snyk-protect": "snyk protect"
   },
   "author": "ULIVZ <chl814@foxmail.com>",
   "license": "MIT",
@@ -40,7 +41,8 @@
     }
   },
   "dependencies": {
-    "bili": "^2.2.6"
+    "bili": "^2.2.6",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "babel-preset-env": "^1.4.0",
@@ -53,5 +55,6 @@
     "envs": [
       "jest"
     ]
-  }
+  },
+  "snyk": true
 }
